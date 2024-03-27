@@ -83,10 +83,10 @@ def get_parser(expect_config: bool = True) -> argparse.ArgumentParser:
     return parser
 
 
-def main(args=None) -> None:
+def main(main_args=None) -> None:
     """Run the `poly.py` config file."""
-    if args != None:
-        sys.argv = args
+    if main_args != None:
+        sys.argv = main_args
     parser = get_parser()
 
     args, _ = parser.parse_known_args()
