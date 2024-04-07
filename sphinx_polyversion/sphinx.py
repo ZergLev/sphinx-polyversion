@@ -185,8 +185,8 @@ class SphinxBuilder(CommandBuilder):
         """
         cmd: Iterable[str | Placeholder] = [
             "sphinx-build",
-            "--color",
             *args,
+            "--color",
             Placeholder.SOURCE_DIR,
             Placeholder.OUTPUT_DIR,
         ]
