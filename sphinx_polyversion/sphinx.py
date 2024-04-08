@@ -184,8 +184,8 @@ class SphinxBuilder(CommandBuilder):
             Additional command to run after `cmd`.
         """
         cmd: Iterable[str | Placeholder] = [
-            "--color",
             "sphinx-build",
+            "--color",
             *args,
             Placeholder.SOURCE_DIR,
             Placeholder.OUTPUT_DIR,
